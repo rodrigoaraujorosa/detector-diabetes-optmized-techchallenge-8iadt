@@ -32,14 +32,13 @@ Sistema de suporte ao diagnóstico de diabetes utilizando **Machine Learning (Ra
 
 - **Algoritmo**: Random Forest Classifier
 - **Hiperparâmetros Otimizados**:
-  - `max_depth`: 15
-  - `max_features`: 'log2'
+  - `n_estimators`: 43
+  - `max_depth`: 19
   - `min_samples_leaf`: 1
   - `min_samples_split`: 5
-  - `n_estimators`: 30
-- **Acurácia**: ~77%
-- **Treinamento**: Sem SMOTE (dados balanceados naturalmente)
-
+  - `max_features`: 'log2'
+- **Acurácia**: ~79%
+- 
 ## 📊 Dataset
 
 **Pima Indians Diabetes Database** (National Institute of Diabetes and Digestive and Kidney Diseases - NIH)
