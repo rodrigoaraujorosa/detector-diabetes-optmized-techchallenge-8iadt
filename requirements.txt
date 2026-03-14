@@ -2,3 +2,5 @@ gradio
 scikit-learn>=1.7.0
 numpy
 pandas
+openai>=1.0.0
+python-dotenv>=1.0.0

@@ -25,10 +25,11 @@ Sistema de suporte ao diagnóstico de diabetes utilizando **Machine Learning (Ra
 - ✅ Predição de diabetes baseada em parâmetros clínicos
 - 📊 Cálculo de probabilidades (Diabético/Não Diabético)
 - 📋 Interpretação automática dos parâmetros inseridos
+- 🤖 **Análise por IA Generativa (OpenAI GPT)** — explicações em linguagem natural e insights acionáveis para médicos
 - 🎨 Interface intuitiva com controles deslizantes
 - 💡 Exemplos pré-configurados para teste
 
-## 🧠 Modelo
+## 🧠 Modelo (Otimizado via Algoritmo Genético)
 
 - **Algoritmo**: Random Forest Classifier
 - **Hiperparâmetros Otimizados**:
@@ -38,7 +39,7 @@ Sistema de suporte ao diagnóstico de diabetes utilizando **Machine Learning (Ra
   - `min_samples_split`: 5
   - `max_features`: 'log2'
 - **Acurácia**: ~79%
-- 
+  
 ## 📊 Dataset
 
 **Pima Indians Diabetes Database** (National Institute of Diabetes and Digestive and Kidney Diseases - NIH)
@@ -72,6 +73,7 @@ Sistema de suporte ao diagnóstico de diabetes utilizando **Machine Learning (Ra
    - Predição (Diabético/Não Diabético)
    - Probabilidades calculadas
    - Interpretação dos parâmetros
+   - **Análise clínica gerada por IA** (requer `OPENAI_API_KEY`)
 
 ## 📝 Exemplos Inclusos
 
@@ -87,9 +89,21 @@ A aplicação inclui 5 casos de teste:
 - **Python** 3.10+
 - **Gradio** - Interface web interativa
 - **Scikit-learn** - Modelo Random Forest
+- **OpenAI GPT-4o-mini** - Explicações em linguagem natural e insights clínicos
 - **Pandas** - Manipulação de dados
 - **NumPy** - Computação numérica
 - **Pickle** - Serialização do modelo
+
+## 🔑 Configuração da API OpenAI (Hugging Face Space)
+
+Para habilitar a análise por IA Generativa:
+
+1. Acesse as **Settings** do seu Space no Hugging Face
+2. Vá em **Variables and secrets**
+3. Adicione um novo secret com o nome: `OPENAI_API_KEY`
+4. Cole sua chave de API da OpenAI como valor
+
+> Sem a chave configurada, as demais funcionalidades (predição e interpretação dos parâmetros) continuam funcionando normalmente.
 
 ## 📚 Projeto Acadêmico
 
