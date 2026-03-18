@@ -212,10 +212,10 @@ para diagnóstico e tratamento adequados.
 
 # Exemplos de casos para teste
 exemplos = [
-    [6, 148, 72, 35, 85, 33.6, 0.627, 50],  # Alto risco
-    [1, 85, 66, 29, 120, 26.6, 0.351, 31],   # Baixo risco
-    [8, 183, 64, 25, 90, 23.3, 0.672, 32],   # Risco moderado
-    [1, 89, 66, 23, 94, 28.1, 0.167, 21],  # Jovem baixo risco
+    [6, 155, 80, 35, 85, 33.6, 0.627, 50],  # Alto risco
+    [1, 85, 49, 33, 134, 24, 0.351, 31],   # Baixo risco
+    [8, 188, 76, 25, 109, 23.3, 0.672, 32],   # Risco moderado
+    [1, 89, 66, 23, 94, 27, 0.167, 21],  # Jovem baixo risco
     [0, 137, 40, 35, 168, 43.1, 2.288, 33] # Risco elevado
 ]
 
@@ -224,13 +224,13 @@ interface = gr.Interface(
     fn=prever_diabetes,
     inputs=[
         gr.Slider(minimum=0, maximum=17, step=1, value=1, label="🤰 Gestações"),
-        gr.Slider(minimum=0, maximum=200, step=1, value=120, label="🩸 Glicose (mg/dL)"),
-        gr.Slider(minimum=0, maximum=122, step=1, value=70, label="💓 Pressão Arterial Diastólica (mm Hg)"),
-        gr.Slider(minimum=0, maximum=99, step=1, value=20, label="📏 Espessura da Pele (mm)"),
-        gr.Slider(minimum=0, maximum=846, step=1, value=79, label="💉 Insulina (mu U/ml)"),
-        gr.Slider(minimum=0, maximum=67, step=0.1, value=19.2, label="⚖️ IMC"),
-        gr.Slider(minimum=0.0, maximum=2.5, step=0.001, value=0.5, label="🧬 Função Pedigree de Diabetes"),
-        gr.Slider(minimum=21, maximum=81, step=1, value=33, label="👤 Idade (anos)")
+        gr.Slider(minimum=0, maximum=200, step=1, value=141, label="🩸 Glicose (mg/dL)"),
+        gr.Slider(minimum=0, maximum=122, step=1, value=43, label="💓 Pressão Arterial Diastólica (mm Hg)"),
+        gr.Slider(minimum=0, maximum=99, step=1, value=25, label="📏 Espessura da Pele (mm)"),
+        gr.Slider(minimum=0, maximum=846, step=1, value=90, label="💉 Insulina (mu U/ml)"),
+        gr.Slider(minimum=0, maximum=67, step=0.1, value=23.3, label="⚖️ IMC"),
+        gr.Slider(minimum=0.0, maximum=2.5, step=0.001, value=0.672, label="🧬 Função Pedigree de Diabetes"),
+        gr.Slider(minimum=21, maximum=81, step=1, value=32, label="👤 Idade (anos)")
     ],
     outputs=[
         gr.Markdown(label="🎯 Resultado da Predição"),
