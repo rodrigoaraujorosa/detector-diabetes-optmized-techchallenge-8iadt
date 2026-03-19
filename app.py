@@ -1,5 +1,5 @@
 """
-Aplicação Gradio para Detecção de Diabetes
+Aplicação Gradio para Diagnóstico de Diabetes
 Autor: Grupo 61 - FIAP 8IADT
 Baseado no dataset Pima Indians Diabetes Database
 """
@@ -238,7 +238,7 @@ interface = gr.Interface(
         gr.Markdown(label="📋 Interpretação dos Parâmetros"),
         gr.Markdown(label="🤖 Análise por IA (OpenAI GPT)"),
     ],
-    title="🏥 Detector de Diabetes - Random Forest + IA Generativa",
+    title="🏥 Diagnóstico de Diabetes - Random Forest + IA Generativa",
     description="""
     ### Sistema de Suporte ao Diagnóstico de Diabetes com IA Generativa
 
@@ -268,7 +268,7 @@ interface = gr.Interface(
 
 if __name__ == "__main__":
     print("\n" + "="*80)
-    print("🚀 GRADIO - DETECTOR DE DIABETES COM MODELO OTIMIZADO POR ALGORITMO GENÉTICO")
+    print("🚀 GRADIO - DIAGNÓSTICO DE DIABETES COM MODELO OTIMIZADO POR ALGORITMO GENÉTICO")
     print("="*80)
     print("\n💡 Interface será aberta no navegador")
     print("🏥 Grupo 61 - FIAP 8IADT Tech Challenge - Fase 2")

@@ -1,5 +1,5 @@
 ---
-title: Detector de Diabetes - Random Forest - Otimizado
+title: Diagnóstico de Diabetes - Random Forest - Otimizado
 emoji: 🏥
 colorFrom: red
 colorTo: blue
@@ -13,7 +13,7 @@ thumbnail: >-
   https://cdn-uploads.huggingface.co/production/uploads/69239245f2835e7820b31ade/eBdPnxehVjii957k4G5zA.png
 ---
 
-# 🏥 Detector de Diabetes - Random Forest - Otimizado
+# 🏥 Diagnóstico de Diabetes - Random Forest - Otimizado
 
 Sistema de suporte ao diagnóstico de diabetes utilizando **Machine Learning (Random Forest)** baseado no dataset Pima Indians Diabetes Database.
 
