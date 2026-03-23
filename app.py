@@ -9,6 +9,7 @@ import pickle
 import pandas as pd
 import numpy as np
 import os
+from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI
 
@@ -93,6 +94,43 @@ Forneça uma análise estruturada com os seguintes tópicos:
         return response.choices[0].message.content # type: ignore
     except Exception as e:
         return f"⚠️ **Erro ao gerar explicação por IA:** {e}"
+
+
+ARQUIVO_CONSULTAS = "consultas.txt"
+
+def salvar_consulta(dados_paciente: dict, predicao: int, prob_diabetico: float, explicacao_llm: str) -> None:
+    """
+    Salva os dados da consulta e a explicação da LLM em arquivo txt,
+    incrementando o arquivo a cada nova consulta.
+    """
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    status = "DIABÉTICO" if predicao == 1 else "NÃO DIABÉTICO"
+    confianca = prob_diabetico * 100 if predicao == 1 else (1 - prob_diabetico) * 100
+
+    separador = "=" * 80
+    entrada = (
+        f"\n{separador}\n"
+        f"CONSULTA REALIZADA EM: {timestamp}\n"
+        f"{separador}\n"
+        f"DADOS DO PACIENTE:\n"
+        f"  Gestações              : {dados_paciente['pregnancies']}\n"
+        f"  Glicose                : {dados_paciente['glucose']} mg/dL\n"
+        f"  Pressão Arterial       : {dados_paciente['blood_pressure']} mm Hg\n"
+        f"  Espessura da Pele      : {dados_paciente['skin_thickness']} mm\n"
+        f"  Insulina               : {dados_paciente['insulin']} mu U/ml\n"
+        f"  IMC                    : {dados_paciente['bmi']:.1f}\n"
+        f"  Função Pedigree        : {dados_paciente['diabetes_pedigree']:.3f}\n"
+        f"  Idade                  : {dados_paciente['age']} anos\n"
+        f"\nRESULTADO DO MODELO:\n"
+        f"  Diagnóstico            : {status}\n"
+        f"  Probabilidade diabetes : {prob_diabetico * 100:.1f}%\n"
+        f"  Confiança              : {confianca:.1f}%\n"
+        f"\nANÁLISE GERADA PELA IA:\n"
+        f"{explicacao_llm}\n"
+    )
+
+    with open(ARQUIVO_CONSULTAS, "a", encoding="utf-8") as f:
+        f.write(entrada)
 
 
 def prever_diabetes(pregnancies, glucose, blood_pressure, skin_thickness,
@@ -207,6 +245,7 @@ para diagnóstico e tratamento adequados.
         "age": age,
     }
     explicacao_llm = gerar_explicacao_llm(dados_paciente, predicao, prob_diabetico)
+    salvar_consulta(dados_paciente, predicao, prob_diabetico, explicacao_llm)
 
     return resultado, prob_texto, interpretacao, explicacao_llm
 
@@ -250,12 +289,9 @@ interface = gr.Interface(
 
     **🎯 Como funciona:**
     1. Ajuste os parâmetros clínicos do paciente usando os controles deslizantes
+    **💡 Dica:** Experimente os exemplos abaixo para ver diferentes cenários!
     2. O modelo Random Forest calcula a probabilidade de diabetes
     3. O GPT (OpenAI) interpreta o resultado e gera insights acionáveis para o médico
-
-    **🔑 Requisito:** Configure a secret `OPENAI_API_KEY` nas configurações do Space para habilitar a análise por IA.
-
-    **💡 Dica:** Experimente os exemplos abaixo para ver diferentes cenários!
 
     ---
     **👥 Desenvolvido por:** Grupo 61

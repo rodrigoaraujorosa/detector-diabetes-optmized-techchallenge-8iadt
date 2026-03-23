@@ -1,0 +1,168 @@
+
+================================================================================
+CONSULTA REALIZADA EM: 2026-03-23 19:08:37
+================================================================================
+DADOS DO PACIENTE:
+  Gestações              : 1
+  Glicose                : 141 mg/dL
+  Pressão Arterial       : 43 mm Hg
+  Espessura da Pele      : 25 mm
+  Insulina               : 90 mu U/ml
+  IMC                    : 23.3
+  Função Pedigree        : 0.672
+  Idade                  : 32 anos
+
+RESULTADO DO MODELO:
+  Diagnóstico            : NÃO DIABÉTICO
+  Probabilidade diabetes : 15.8%
+  Confiança              : 84.2%
+
+ANÁLISE GERADA PELA IA:
+### 1. Explicação do Diagnóstico
+O modelo de Machine Learning (Random Forest) avaliou os dados clínicos do paciente e concluiu que ele é **NÃO DIABÉTICO**, com uma probabilidade de diabetes de 15.8% e uma confiança no diagnóstico de 84.2%. Isso significa que, com base nas informações fornecidas, o modelo considera que o paciente tem uma baixa probabilidade de desenvolver diabetes, embora não possa descartar completamente a possibilidade. 
+
+Os parâmetros que mais influenciaram essa predição incluem:
+- **Glicose plasmática**: O valor de 141 mg/dL é elevado, mas não é suficiente para um diagnóstico de diabetes, que geralmente requer valores acima de 126 mg/dL em jejum.
+- **Insulina sérica**: Um nível de 90 mu U/ml pode indicar resistência à insulina, mas não é um critério isolado para diagnóstico.
+- **Função de pedigree de diabetes**: Um valor de 0.672 sugere uma predisposição genética, o que pode ter contribuído para a avaliação do risco.
+
+### 2. Fatores de Risco Identificados
+Os principais fatores de risco presentes nos dados do paciente incluem:
+- **Glicose plasmática elevada**: 141 mg/dL, que, embora não atinja o ponto de diagnóstico para diabetes, é um sinal de alerta.
+- **Insulina sérica elevada**: Níveis de insulina podem indicar resistência à insulina.
+- **Idade**: O paciente tem 32 anos, e a idade é um fator de risco para diabetes tipo 2, especialmente em combinação com outros fatores.
+- **Histórico familiar**: A função de pedigree de diabetes de 0.672 sugere um risco genético aumentado.
+
+### 3. Insights Acionáveis para o Médico
+1. **Monitoramento da Glicose**: Recomendar que o paciente realize exames regulares de glicose em jejum e hemoglobina glicada (HbA1c) para monitorar a evolução dos níveis glicêmicos.
+2. **Avaliação da Resistência à Insulina**: Considerar a realização de um teste de tolerância à glicose (TTG) para avaliar melhor a resposta do paciente à glicose.
+3. **Avaliação do Estilo de Vida**: Incentivar o paciente a adotar um estilo de vida saudável, incluindo uma dieta balanceada e atividade física regular, para ajudar a controlar os níveis de glicose e insulina.
+4. **Consulta com Especialista**: Se necessário, encaminhar o paciente para um endocrinologista para uma avaliação mais aprofundada sobre a resistência à insulina e estratégias de manejo.
+5. **Educação sobre Diabetes**: Prover informações sobre os sinais e sintomas do diabetes, bem como sobre a importância do autocuidado e monitoramento da saúde.
+
+### 4. Próximos Passos Sugeridos
+- **Reavaliação em 3 a 6 meses**: Agendar uma consulta de acompanhamento para revisar os resultados dos exames e avaliar a evolução do estado de saúde do paciente.
+- **Exames de sangue**: Incluir exames de perfil lipídico e função hepática para uma visão mais abrangente da saúde metabólica do paciente.
+- **Acompanhamento nutricional**: Considerar a inclusão de um nutricionista para ajudar na elaboração de um plano alimentar que favoreça a saúde metabólica.
+- **Monitoramento de sinais de alerta**: Instruir o paciente a relatar qualquer sintoma novo, como aumento da sede, urinação frequente ou fadiga, que possa indicar alterações no estado de saúde.
+
+Essas recomendações visam garantir um acompanhamento adequado e proativo, minimizando o risco de progressão para diabetes.
+
+================================================================================
+CONSULTA REALIZADA EM: 2026-03-23 19:09:36
+================================================================================
+DADOS DO PACIENTE:
+  Gestações              : 1
+  Glicose                : 85 mg/dL
+  Pressão Arterial       : 49 mm Hg
+  Espessura da Pele      : 33 mm
+  Insulina               : 134 mu U/ml
+  IMC                    : 24.0
+  Função Pedigree        : 0.351
+  Idade                  : 31 anos
+
+RESULTADO DO MODELO:
+  Diagnóstico            : NÃO DIABÉTICO
+  Probabilidade diabetes : 11.4%
+  Confiança              : 88.6%
+
+ANÁLISE GERADA PELA IA:
+### 1. Explicação do Diagnóstico
+O modelo de Machine Learning (Random Forest) avaliou os dados clínicos do paciente e concluiu que ele é **NÃO DIABÉTICO**, com uma probabilidade de diabetes de apenas 11.4%. A confiança do diagnóstico é alta, em 88.6%, o que sugere que o modelo está bastante seguro de sua predição. 
+
+Os parâmetros que mais influenciaram essa predição incluem:
+
+- **Glicose plasmática**: Com um valor de 85 mg/dL, está dentro da faixa normal, o que é um bom indicativo.
+- **Pressão arterial diastólica**: O valor de 49 mm Hg é considerado baixo e pode ser um sinal de saúde cardiovascular, mas também pode indicar um risco de hipotensão.
+- **Espessura da dobra cutânea (tríceps)**: Um valor de 33 mm pode ser considerado elevado, mas deve ser interpretado em conjunto com outros fatores.
+- **Insulina sérica**: O nível de 134 mu U/ml é relativamente alto e pode ser um indicativo de resistência à insulina, mas não é suficiente para um diagnóstico isolado.
+- **Função de pedigree de diabetes**: Um valor de 0.351 sugere uma predisposição genética, embora não seja determinante por si só.
+
+### 2. Fatores de Risco Identificados
+Os principais fatores de risco presentes nos dados do paciente incluem:
+
+- **Insulina sérica elevada**: 134 mu U/ml pode indicar resistência à insulina.
+- **Espessura da dobra cutânea**: 33 mm, que pode estar associada à obesidade e resistência à insulina.
+- **Histórico familiar de diabetes**: A função de pedigree de diabetes de 0.351 sugere uma predisposição genética.
+
+### 3. Insights Acionáveis para o Médico
+Aqui estão algumas recomendações práticas e específicas:
+
+1. **Monitoramento da Glicose**: Recomendar que o paciente realize monitoramento regular da glicose em jejum, especialmente se houver histórico familiar de diabetes.
+  
+2. **Avaliação da Insulina**: Considerar a realização de um teste de resistência à insulina (HOMA-IR) para avaliar melhor a função metabólica do paciente.
+
+3. **Avaliação do IMC e Estilo de Vida**: Incentivar o paciente a manter um estilo de vida saudável, com foco em dieta equilibrada e atividade física regular, para prevenir o desenvolvimento de diabetes.
+
+4. **Consulta com Nutricionista**: Encaminhar o paciente para uma consulta com um nutricionista para orientações sobre alimentação saudável, especialmente em relação ao controle de carboidratos.
+
+5. **Reavaliação Periódica**: Agendar consultas de acompanhamento a cada 6 meses para reavaliar os parâmetros de saúde e ajustar a conduta conforme necessário.
+
+### 4. Próximos Passos Sugeridos
+As próximas etapas recomendadas para o acompanhamento do paciente incluem:
+
+- **Realizar exames laboratoriais adicionais**: Como hemoglobina glicada (HbA1c) e perfil lipídico, para uma avaliação mais abrangente do risco cardiovascular e metabólico.
+  
+- **Educação sobre Diabetes**: Oferecer informações sobre diabetes, seus fatores de risco e a importância da detecção precoce.
+
+- **Acompanhamento da Pressão Arterial**: Monitorar a pressão arterial, especialmente considerando o valor diastólico baixo, para avaliar a saúde cardiovascular geral.
+
+- **Revisão do histórico familiar**: Discutir com o paciente sobre o histórico familiar de diabetes e outros fatores que possam influenciar sua saúde.
+
+Essas etapas ajudarão a garantir que o paciente mantenha um bom estado de saúde e minimize o risco de desenvolvimento de diabetes no futuro.
+
+================================================================================
+CONSULTA REALIZADA EM: 2026-03-23 19:10:17
+================================================================================
+DADOS DO PACIENTE:
+  Gestações              : 6
+  Glicose                : 155 mg/dL
+  Pressão Arterial       : 80 mm Hg
+  Espessura da Pele      : 35 mm
+  Insulina               : 85 mu U/ml
+  IMC                    : 33.6
+  Função Pedigree        : 0.627
+  Idade                  : 50 anos
+
+RESULTADO DO MODELO:
+  Diagnóstico            : DIABÉTICO
+  Probabilidade diabetes : 83.9%
+  Confiança              : 83.9%
+
+ANÁLISE GERADA PELA IA:
+### 1. Explicação do Diagnóstico
+O modelo de Machine Learning, especificamente o Random Forest, indicou que o paciente é **diabético** com uma probabilidade de 83.9%. Isso significa que, com base nos dados clínicos fornecidos, há uma alta certeza de que o paciente apresenta diabetes. Os parâmetros que mais influenciaram essa predição incluem:
+
+- **Glicose plasmática**: Um nível de 155 mg/dL é considerado elevado e é um dos principais indicadores de diabetes.
+- **IMC (Índice de Massa Corporal)**: Com um IMC de 33.6, o paciente se classifica como obeso, o que é um fator de risco significativo para diabetes tipo 2.
+- **Insulina sérica**: Um nível de 85 mu U/ml sugere resistência à insulina, comum em pacientes diabéticos.
+- **Idade**: A idade de 50 anos também é um fator de risco, pois o risco de diabetes aumenta com a idade.
+
+### 2. Fatores de Risco Identificados
+Os principais fatores de risco presentes nos dados do paciente incluem:
+
+- **Número de gestações**: 6 gestações podem indicar um histórico de diabetes gestacional, que aumenta o risco de diabetes tipo 2.
+- **Glicose plasmática elevada**: 155 mg/dL, que é um sinal claro de hiperglicemia.
+- **IMC elevado**: 33.6, indicando obesidade.
+- **Pressão arterial diastólica**: 80 mm Hg, que, embora não seja alta, pode ser um fator a ser monitorado em conjunto com outros riscos.
+- **Insulina sérica elevada**: 85 mu U/ml, indicando resistência à insulina.
+- **Função de pedigree de diabetes**: 0.627, que sugere uma predisposição genética para diabetes.
+
+### 3. Insights Acionáveis para o Médico
+Com base nos dados e no diagnóstico, as seguintes recomendações práticas são sugeridas:
+
+1. **Exames adicionais**: Solicitar um hemograma completo, teste de hemoglobina glicada (HbA1c) e perfil lipídico para avaliar o controle glicêmico e o risco cardiovascular.
+2. **Monitoramento da glicose**: Instruir o paciente a monitorar os níveis de glicose em casa, especialmente após refeições, para entender melhor as flutuações glicêmicas.
+3. **Avaliação nutricional**: Encaminhar o paciente para um nutricionista para desenvolver um plano alimentar que ajude na perda de peso e controle glicêmico.
+4. **Atividade física**: Recomendar um programa de exercícios regular, com foco em atividades aeróbicas e de resistência, para ajudar na perda de peso e melhorar a sensibilidade à insulina.
+5. **Acompanhamento psicológico**: Considerar o apoio psicológico, pois a gestão do diabetes pode ser desafiadora e o suporte emocional pode ser benéfico.
+
+### 4. Próximos Passos Sugeridos
+As próximas etapas recomendadas para o acompanhamento do paciente incluem:
+
+- **Consulta com endocrinologista**: Para avaliação detalhada e possível início de terapia medicamentosa, se necessário.
+- **Reavaliação regular**: Agendar consultas de acompanhamento a cada 3-6 meses para monitorar a evolução do diabetes e ajustar o tratamento conforme necessário.
+- **Educação em diabetes**: Oferecer sessões de educação sobre diabetes para capacitar o paciente a gerenciar sua condição de forma eficaz.
+- **Monitoramento de comorbidades**: Avaliar e monitorar possíveis comorbidades associadas, como hipertensão e dislipidemia.
+
+Essas etapas ajudarão a garantir um manejo adequado e eficaz da condição do paciente.
